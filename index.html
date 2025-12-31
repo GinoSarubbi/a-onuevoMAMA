@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Navidad, Mamá 🎄</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-white text-slate-800">
+    <!-- Copitos navideños (se crean por JS) -->
+    <main class="mx-auto max-w-3xl px-4 py-10 relative">
+      <!-- Tarjeta única (sin sombras, sin blur) -->
+      <section class=" bg-white overflow-hidden">
+        <!-- Encabezado -->
+        <div class="p-8 text-center">
+          <p
+            class="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-emerald-700 font-semibold"
+          >
+            🎁 Para Mamá
+          </p>
+
+          <h1 class="mt-5 text-4xl sm:text-5xl font-extrabold tracking-tight">
+            Feliz Año nuevo, <span class="text-rose-600">Mamá</span> 🎄
+          </h1>
+
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+            Te hice esta página que es mi carta. Dale play al video 💚
+          </p>
+        </div>
+
+        <!-- Video -->
+        <div class="px-6 pb-6">
+          <div class="relative aspect-video w-full overflow-hidden rounded-2xl bg-slate-100">
+            <video
+              class="h-full w-full"
+              controls
+              playsinline
+              preload="metadata"
+              poster="https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="video.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
+            </video>
+
+            <!-- OPCIÓN B: YouTube (si querés) -->
+            <!--
+            <iframe
+              class="absolute inset-0 h-full w-full"
+              src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1"
+              title="Video para Mamá"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            -->
+          </div>
+
+          <!-- Mensajito -->
+          <div class="mt-6 rounded-2xl bg-rose-50 p-6 border border-rose-100">
+            <h2 class="text-xl font-bold text-rose-700">Un mensajito 💌</h2>
+            <p class="mt-2 text-slate-700 leading-relaxed">
+              Gracias por todo lo que hacés por mi, te quiero mucho mamita
+              <span class="font-semibold">¡Que este año sea hermoso!</span>
+            </p>
+          </div>
+
+          <!-- Botones -->
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <button
+              id="confettiBtn"
+              class="w-full sm:w-auto rounded-2xl bg-emerald-600 px-6 py-3 font-bold text-white hover:bg-emerald-700 active:scale-[0.99] transition"
+            >
+              Apretá acá 🎉
+            </button>
+
+            <a
+              href="https://wa.me/?text=Feliz%20Navidad%20Mamá%20🎄%20Te%20amo%20mucho"
+              class="w-full sm:w-auto rounded-2xl bg-slate-900 px-6 py-3 font-bold text-white hover:bg-slate-800 text-center transition"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Enviarte por WhatsApp ❤️
+            </a>
+          </div>
+
+          <p class="mt-6 text-center text-xs text-slate-500">
+            Hecho con amor por Gino ✨
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
